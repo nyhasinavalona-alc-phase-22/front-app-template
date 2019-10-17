@@ -1,5 +1,6 @@
 * {
     color: #707070;
+    font-family: 'Montserrat';
 }
 
 body {
@@ -59,6 +60,11 @@ nav {
     outline: none;
 }
 
+.search-bar__control input::placeholder{
+    font-weight: 300;
+    font-size: 13pt;
+}
+
 .navbar__avatar {
     display: grid;
     align-items: center;
@@ -99,6 +105,15 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.sidebar__avatar__user-name{
+    font-weight: 700; 
+    margin-bottom: 5px;
+}
+
+.sidebar__avatar__function{
+    font-weight: 300; 
 }
 
 .sidebar__menu {
