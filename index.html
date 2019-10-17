@@ -5,21 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>ALC</title>
-        <link rel="stylesheet" href="/assets/css/reset.css" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <main>
             <header>
                 <nav class="navbar">
                     <figure class="navbar__brand">
-                        <img src="/assets/images/logo.png" alt="logo" />
+                        <img src="./assets/images/logo.png" alt="logo" />
                     </figure>
                     <div class="navbar__search-bar">
                         <form>
                             <div class="search-bar__control">
                                 <img
-                                    src="/assets/images/search.svg"
+                                    src="./assets/images/search.svg"
                                     alt="search"
                                 />
                                 <input type="text" placeholder="Search" />
@@ -28,13 +28,13 @@
                     </div>
                     <figure class="navbar__avatar">
                         <img
-                            src="/assets/images/avatar-1.png"
+                            src="./assets/images/avatar-1.png"
                             alt="nyhasina"
                             class="avatar__user-profile"
                         />
                         <figcaption>nyhasina</figcaption>
                         <img
-                            src="/assets/images/arrow-down.svg"
+                            src="./assets/images/arrow-down.svg"
                             alt="arrow down"
                             class="avatar__arrow-down"
                         />
@@ -42,7 +42,7 @@
                     <div class="navbar__button-group">
                         <button class="button-group__button button-group__button--message">
                             <img
-                                src="/assets/images/message.svg"
+                                src="./assets/images/message.svg"
                                 alt="message"
                             />
                         </button>
@@ -50,18 +50,46 @@
                             class="button-group__button button-group__button--notification"
                         >
                             <img
-                                src="/assets/images/notification.svg"
+                                src="./assets/images/notification.svg"
                                 alt="notification"
                             />
                         </button>
                         <button class="button-group__button button-group__button--menu">
-                            <img src="/assets/images/menu.svg" alt="menu" />
+                            <img src="./assets/images/menu.svg" alt="menu" />
                         </button>
                     </div>
                 </nav>
             </header>
             <section class="right">
-                <nav class="navbar"></nav>
+                <nav class="sidebar">
+                    <figure class="sidebar__avatar">
+                        <img src="./assets/images/avatar-1.png" alt="nyhasina">
+                        <figcaption>
+                            <span>Ny Hasinavalona</span>
+                            <span>Fantastic developer</span>
+                        </figcaption>
+                    </figure>
+                    <ul class="sidebar__menu">
+                        <li class="menu__item menu__item--home">
+                            <a href="">
+                            <span class="item__caption">Home</span>
+                            <span class="item__icon"></span>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--trending">
+                            <a href="">
+                            <span class="item__caption">Trending</span>
+                            <span class="item__icon"></span>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--favorite">
+                            <a href="">
+                            <span class="item__caption">Favorite</span>
+                            <span class="item__icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <article></article>
             </section>
         </main>
