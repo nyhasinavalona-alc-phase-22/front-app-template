@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ALC</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <main>
-        <header>
-            <nav class="navbar">
-                <h1 class="brand">ALC MWS</h1>
-            </nav>
-        </header>
-        <section class="right">
-            <nav class="navbar"></nav>
-            <article></article>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ALC</title>
+        <link rel="stylesheet" href="/assets/css/reset.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav class="navbar">
+                    <figure class="navbar__brand">
+                        <img src="/assets/images/logo.png" alt="logo" />
+                    </figure>
+                    <div class="navbar__search-bar">
+                        <form>
+                            <div class="search-bar__control">
+                                <img
+                                    src="/assets/images/search.svg"
+                                    alt="search"
+                                />
+                                <input type="text" placeholder="Search" />
+                            </div>
+                        </form>
+                    </div>
+                    <figure class="navbar__avatar">
+                        <img
+                            src="/assets/images/avatar-1.png"
+                            alt="nyhasina"
+                            class="avatar__user-profile"
+                        />
+                        <figcaption>nyhasina</figcaption>
+                        <img
+                            src="/assets/images/arrow-down.svg"
+                            alt="arrow down"
+                            class="avatar__arrow-down"
+                        />
+                    </figure>
+                    <div class="navbar__button-group">
+                        <button class="button-group__button button-group__button--message">
+                            <img
+                                src="/assets/images/message.svg"
+                                alt="message"
+                            />
+                        </button>
+                        <button
+                            class="button-group__button button-group__button--notification"
+                        >
+                            <img
+                                src="/assets/images/notification.svg"
+                                alt="notification"
+                            />
+                        </button>
+                        <button class="button-group__button button-group__button--menu">
+                            <img src="/assets/images/menu.svg" alt="menu" />
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <section class="right">
+                <nav class="navbar"></nav>
+                <article></article>
+            </section>
+        </main>
+    </body>
 </html>
