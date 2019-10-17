@@ -1,0 +1,29 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(9.7vh, 100px) 1fr;
+}
+
+nav {
+    height: 100%;
+}
+
+.sidebar, .navbar {
+    background: #fff;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: minmax(20.8vw, 400px) 1fr;
+}
+
+.navbar .brand {
+    font-family: 'SF Compact Display Bold';
+    font-size: 35pt;
+}
