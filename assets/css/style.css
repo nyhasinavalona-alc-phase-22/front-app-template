@@ -1,33 +1,36 @@
+* {
+    color: #707070;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
 }
 
 main {
-  height: 100%;
-  display: grid;
-  grid-template-rows: minmax(9.7vh, 100px) 1fr;
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(9.7vh, 100px) 1fr;
 }
 
 nav {
-  height: 100%;
+    height: 100%;
 }
 
 .sidebar,
 .navbar {
-  background: #fff;
+    background: #fff;
 }
 
 .right {
-  display: grid;
-  grid-template-columns: minmax(20.8vw, 400px) 1fr;
+    display: grid;
+    grid-template-columns: minmax(20.8vw, 400px) 1fr;
 }
 
 .navbar {
     display: flex;
 }
-
 
 .navbar__brand {
     display: flex;
@@ -75,4 +78,74 @@ nav {
     outline: none;
     border: none;
     background: transparent;
+}
+
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+	padding: 0 50px 0 50px;
+}
+
+.sidebar__avatar {
+    display: flex;
+	margin: 60px 0 25px 0;
+}
+
+.sidebar__avatar img {
+	margin-right: 10px;
+}
+
+.sidebar__avatar figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar__menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu__item {
+	margin: 25px 0 25px 0;
+}
+
+.menu__item a {
+	height: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.item__icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu__item--home .item__icon {
+    background-image: url(/assets/images/home.svg);
+}
+
+.menu__item--home--active .item__icon {
+    background-image: url(/assets/images/home-active.svg);
+}
+
+.menu__item--trending .item__icon {
+    background-image: url(/assets/images/trending.svg);
+}
+
+.menu__item--trending--active .item__icon {
+    background-image: url(/assets/images/trending-active.svg);
+}
+
+.menu__item--favorite .item__icon {
+    background-image: url(/assets/images/favorite.svg);
+}
+
+.menu__item--favorite--active .item__icon {
+    background-image: url(/assets/images/favorite-active.svg);
 }
